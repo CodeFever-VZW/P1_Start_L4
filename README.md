@@ -1,11 +1,5 @@
 # Readme
 
-## Todo after init:
-This repository based on the Python_startcode_starter repository.
-Upon creating it, please change the values in publish.yml to represent the correct ones for this repo.
-
-Once this job is done, please remove this section in the readme.
-
 ## BIG NONO:
 Please do not touch any files in workflows unless you're part of the development team (aka: not a content creator).
 Any changes there might disrupt the workflow, which will lead to a lot of confused/angry students & teachers.

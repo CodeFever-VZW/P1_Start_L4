@@ -1,7 +1,7 @@
 name: Upload starter_zip
 
 env:
-  ZIP_NAME: startcodePxLx
+  ZIP_NAME: startcodeP1L4
   FOLDER_TO_ZIP: ./startcode
   
 on:

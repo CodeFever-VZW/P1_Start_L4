@@ -1,0 +1,22 @@
+name: Upload starter_zip
+
+env:
+  ZIP_NAME: startcodePxLx
+  FOLDER_TO_ZIP: ./startcode
+  
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: zip and upload
+        env:
+          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_CODEFEVER_BLOB_STORAGE_CONNECTION_STRING }}
+        run: cd $FOLDER_TO_ZIP && zip -r ./$ZIP_NAME.zip . && az storage blob upload -f ./$ZIP_NAME.zip -c \python-code -n $ZIP_NAME.zip --overwrite
+      - name: output folder
+        run: echo "File downloadable on https://codefeverpublic.blob.core.windows.net/python-code/$ZIP_NAME.zip"

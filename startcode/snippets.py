@@ -17,6 +17,8 @@ print(boodschappenlijstje)
 # de lengte van een lijst ophalen
 print(len(boodschappenlijstje))
 
+
+
 # index error
 my_list = [1, 2, 3]
 print(my_list[3])
@@ -29,6 +31,8 @@ print(result)
 # name error
 print(non_existent_list)
 
+
+
 # sorteren
 getallen = [7, 2, 5, 1, 10]
 
@@ -40,6 +44,8 @@ print("Oplopend gesorteerde lijst:", getallen) # Output: [1, 2, 5, 7, 10]
 getallen.sort(reverse=True)
 print("Aflopend gesorteerde lijst:", getallen) # Output: [10, 7, 5, 2, 1]
 
+
+
 # itereren in een lijst:
 def toon_lijst(lijst):
     for item in lijst:
@@ -49,12 +55,14 @@ mijn_lijst = [1, 2, 3, 4, 5]
 toon_lijst(mijn_lijst)
 
 
+
 # itereren over een string:
 def toon_karakters(woord):
     for karakter in woord:
         print(karakter)
 
 toon_karakters("CodeFever")
+
 
 
 # een lus vroeger stoppen via break:
